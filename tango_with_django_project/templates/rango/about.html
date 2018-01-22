@@ -14,10 +14,8 @@
 		</div>
 		<div>
 			<a href = '/rango/'>Index</a><br />
-			<img src ='/media/cat.jpg'
-				alt = "Picture of Rango as a Cat" /> <!-- New line-->
-			<img src ='/static/images/rango.jpg'
-				alt = "The pictures of the project" />
+			<img src="{{ MEDIA_URL }}cat.jpg"	alt = "Picture of Rango as a Cat" /> <!-- New line-->
+			<img src="{% static "images/rango.jpg" %}"	alt = "The pictures of the project" />
 		</div>
 	</body>
 </html>
