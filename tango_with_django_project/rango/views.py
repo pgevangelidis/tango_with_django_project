@@ -89,7 +89,7 @@ def add_page(request, category_name_slug):
 		form = PageForm(request.POST)
 		if form.is_valid():
 			if category:
-				page = form_save(commit=False)
+				page = form.save(commit=False)
 				page.category = category
 				page.views = 0;
 				page.save()
